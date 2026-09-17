@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./img/sunset-silhouettes-trees-mountains-generative-ai.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 100vh;
+
+}
+
+.base {
+    background-image: url('./img/ChatGPT\ Image\ Aug\ 28\,\ 2026\,\ 11_18_37\ AM.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    width: 900px;
+    border: 6px solid black;
+    border-radius: 5px;
+    position: relative;
+
+    #smiley {
+        height: 30px;
+        position: absolute;
+        display: inline-block;
+    }
+
+    .coin {
+        height: 20px;
+        position: absolute;
+    }
+
+
+    #coin-1 {
+        top: 30px;
+        left: 130px;
+    }
+
+    #coin-2 {
+        top: 180px;
+        left: 610px;
+    }
+
+    #coin-3 {
+        top: 310px;
+        left: 310px;
+    }
+
+    #coin-4 {
+        top: 460px;
+        left: 560px;
+    }
+}
+
+.score-controls{
+    display: flex;
+    flex-direction: column;
+    gap: 300px;
+
+    .score-board{
+        width: 270px;
+        height: 100px;
+        background-color: rgba(255, 255, 255, 0.558);
+        
+    }
+}
+
+.btn-container {
+    button {
+        background-color: transparent;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        padding: 10px 24px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #ffffff81;
+        color: #000000;
+    }
+}
+
+#win-or-lose {
+    position: absolute;
+    top: 180px;
+    left: 300px;
+}
