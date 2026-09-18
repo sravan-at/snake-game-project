@@ -23,6 +23,7 @@ bottomBtn.addEventListener('click', function () {
 var winOrLose = document.querySelector('#win-or-lose')
 var winImg = 'img/winner.gif'
 var loseImg = 'img/gameover.webp'
+var coinAudio = new Audio('audio/coin-drop.mp3')
 
 var coins = document.querySelectorAll('.coin')
 
@@ -73,24 +74,28 @@ let ary = [
 function getPoint() {
     if (ary[0].x === smileyX && ary[0].y === smileyY) {
         coins[0].style.display = 'none'
+        coinAudio.play()
         point++
         document.querySelector('#point').innerText = point
     }
 
     if (ary[1].x === smileyX && ary[1].y === smileyY) {
         coins[1].style.display = 'none'
+        coinAudio.play()
         point++
         document.querySelector('#point').innerText = point
     }
 
     if (ary[2].x === smileyX && ary[2].y === smileyY) {
         coins[2].style.display = 'none'
+        coinAudio.play()
         point++
         document.querySelector('#point').innerText = point
     }
 
     if (ary[3].x === smileyX && ary[3].y === smileyY) {
         coins[3].style.display = 'none'
+        coinAudio.play()
         point++
         document.querySelector('#point').innerText = point
     }
